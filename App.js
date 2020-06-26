@@ -58,8 +58,14 @@ export default function App() {
       <Button
         title="Click Me Twice"
         color="orange"
-        onPress={() => {
-          Alert.alert("Mega Title", "button tapped", [{text : "Yes" , onPress : ()=>alert("thank you")}, {text : "no"}]);
+        // onPress={() => {
+        //   Alert.alert("Mega Title", "button tapped", [{text : "Yes" , onPress : ()=>alert("thank you")}, {text : "no"}]);
+        // }}
+
+
+        // works only on ios
+        onPress ={()=>{
+          Alert.prompt("Title", "My  Message ", text =>{alert(text)})
         }}
       />
 
