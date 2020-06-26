@@ -12,6 +12,7 @@ import {
   View,
   SafeAreaView,
   Image,
+  Platform
 } from "react-native";
 
 export default function App() {
@@ -58,15 +59,15 @@ export default function App() {
       <Button
         title="Click Me Twice"
         color="orange"
-        // onPress={() => {
-        //   Alert.alert("Mega Title", "button tapped", [{text : "Yes" , onPress : ()=>alert("thank you")}, {text : "no"}]);
-        // }}
+        onPress={() => {
+          Alert.alert("Mega Title", "button tapped", [{text : "Yes" , onPress : ()=>alert("thank you")}, {text : "no"}]);
+        }}
 
 
         // works only on ios
-        onPress ={()=>{
-          Alert.prompt("Title", "My  Message ", text =>{alert(text)})
-        }}
+      //   onPress ={()=>{
+      //     Alert.prompt("Title", "My  Message ", text =>{alert(text)})
+      //   }}
       />
 
       <StatusBar style="auto" />
@@ -79,6 +80,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "white",
     alignItems: "center",
-    justifyContent: "center",
+    // justifyContent: "center",
+    paddingTop : Platform.OS === "android" ? StatusBar.currentHeight : 0
   },
 });
