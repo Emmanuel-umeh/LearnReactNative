@@ -37,7 +37,8 @@ export default class App extends React.Component{
             alignItems : "center", //determines the allignemt of elements within each line
 
             alignContent : "center", // determines the allignment of the entire content or div, only works if their is wrapping below
-            flexWrap : "wrap"}}>
+            // flexWrap : "wrap"
+            }}>
   
   
           <View style ={{backgroundColor : "dodgerblue",  height :100,
@@ -45,13 +46,13 @@ export default class App extends React.Component{
           flexGrow : 1, //same with flex
           flexShrink : 1 //same as flex : -1
         }} />
-          <View style ={{backgroundColor : "gold", width : 100, height :100}} />
-          <View style ={{backgroundColor : "tomato", width : 100, height :100}} />
+          <View style ={{backgroundColor : "gold", width : 100, height :100, top : 20}} />
+          <View style ={{backgroundColor : "tomato", width : 100, height :100, top : 20}} />
   
   
           <View style ={{backgroundColor : "grey", width : 100, height :100}} />
   
-          <View style ={{backgroundColor : "greenyellow", width : 100, height :100}} />
+          <View style ={{backgroundColor : "greenyellow", width : 100, height :100, top : -40}} />
   
   
         </View>
