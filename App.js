@@ -41,8 +41,9 @@ export default class App extends React.Component{
   
   
           <View style ={{backgroundColor : "dodgerblue",  height :100,
-          flexBasis : 100 ,//same with width or heighht depending on the flex direction
+          flexBasis : 400 ,//same with width or heighht depending on the flex direction
           flexGrow : 1, //same with flex
+          flexShrink : 1 //same as flex : -1
         }} />
           <View style ={{backgroundColor : "gold", width : 100, height :100}} />
           <View style ={{backgroundColor : "tomato", width : 100, height :100}} />
