@@ -16,6 +16,7 @@ import {
 } from "react-native";
 import { render } from "react-dom";
 import Login from "./screens/Login"
+import ViewImage from "./screens/ViewImage";
 
 export default class App extends React.Component{
    press = () => {
@@ -28,7 +29,8 @@ export default class App extends React.Component{
     console.log("OS ", Platform.OS)
     return (
 
-      <Login />
+      // <Login />
+      <ViewImage />
       // <SafeAreaView style ={styles.container}>
     
       // </SafeAreaView>
