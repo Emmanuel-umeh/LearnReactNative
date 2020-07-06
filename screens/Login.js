@@ -116,9 +116,45 @@ export default class Login extends Component {
           <Text>Sell what you need</Text>
         </View>
 
-        <View style={styles.button1}></View>
+        <View
+          style={{
+            width: "50%",
+            alignContent: "center",
+            justifyContent: "center",
+            position: "absolute",
+            top: "80%",
+            left: "25%",
+          }}
+        >
+          <Button
+            // onPress={onPressLearnMore}/
+            title="Login"
+            color="teal"
+            // width = "50%"
+            style={styles.button1}
+            accessibilityLabel="Learn more about this purple button"
+          />
+        </View>
 
-        <View style={styles.button2}></View>
+        <View
+          style={{
+            width: "50%",
+            alignContent: "center",
+            justifyContent: "center",
+            position: "absolute",
+            top: "87%",
+            left: "25%",
+          }}
+        >
+          <Button
+            // onPress={onPressLearnMore}/
+            title="Sign Up"
+            color="red"
+            // width = "50%"
+            style={styles.button1}
+            accessibilityLabel="Learn more about this purple button"
+          />
+        </View>
       </React.Fragment>
     );
   }
@@ -140,13 +176,13 @@ const styles = StyleSheet.create({
   logoContainer: {
     position: "absolute",
     top: 70,
-    width : "100%",
+    width: "100%",
     // marginLeft : "30%",
     alignItems: "center",
   },
   button1: {
     backgroundColor: "#fc5c65",
-    width: "100%",
+    width: "50%",
     height: 70,
     justifyContent: "flex-end",
   },
@@ -156,6 +192,4 @@ const styles = StyleSheet.create({
     height: 70,
     justifyContent: "flex-end",
   },
-
-
 });

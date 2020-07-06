@@ -29,8 +29,8 @@ export default class App extends React.Component{
     console.log("OS ", Platform.OS)
     return (
 
-      // <Login />
-      <ViewImage />
+      <Login />
+      // <ViewImage />
       // <SafeAreaView style ={styles.container}>
     
       // </SafeAreaView>
